@@ -94,7 +94,7 @@ a {
   margin-left: 2%;
 }
 
-.desc .title {
+.title {
   color: black;
   font-size: 3em;
   margin: 0 10px;
@@ -145,4 +145,20 @@ a {
   .descr {
     font-size: 1.25em;
   }
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.in {
+  margin: 0 350px;
+  line-height: 100px;
+}
+
+.download-icon {
+  width: 100px;
+  height: 100px;
 }
