@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Sacramento&display=swap");
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  font-size: 1.25em;
+  padding-left: 10px;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+  flex-wrap: wrap;
+
+  background-image: url("./assets/bg.png");
+  background-color: #008090;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 5px;
+}
+
+.header-ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header-ul li {
+  margin-top: 30px;
+}
+
+.header-ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 10px;
+}
+
+.gif {
+  width: 300px;
+  height: 300px;
+}
+
+.name {
+  font-family: "Sacramento", cursive;
+  color: white;
+  font-size: 6em;
+  margin: 0;
+}
+
+.descr {
+  color: white;
+  font-size: 2em;
+}
+
+.about {
+  margin: 30px 5px;
+  border-top: 10px;
+  overflow: auto;
+}
+
+.dp {
+  float: left;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.dp-img {
+  width: auto;
+  height: 100%;
+  margin-left: -20px;
+}
+
+.desc {
+  float: left;
+  width: 80%;
+  margin-left: 2%;
+}
+
+.desc .title {
+  color: black;
+  font-size: 3em;
+  margin: 0 10px;
+  padding-bottom: 20px;
+}
+
+.desc .about-me {
+  color: black;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+@media (max-width: 1676px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dp {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .desc {
+    float: none;
+    width: 100%;
+  }
+}
