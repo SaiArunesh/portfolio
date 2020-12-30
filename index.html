@@ -3,76 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
     <link rel="icon" href="./assets/SA_Logo.png" />
-    <title>Sai's Website</title>
+    <title>Sai's Portfolio</title>
   </head>
   <body>
-    <div class="header">
-      <ul class="header-ul">
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Download Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <img class="gif" src="./assets/giphy.gif" alt="flying_plane" />
-      <p class="name">Sai Arunesh</p>
-      <p class="descr">I am a <b>UI Developer</b></p>
-    </div>
-    <section id="about-me">
-      <div class="about">
-        <div class="dp">
-          <img class="dp-img" src="./assets/dp.png" alt="display_picture" />
-        </div>
-        <div class="desc" id="about">
-          <p class="title">About me</p>
-          <p class="about-me">
-            Skilled in Embedded Programming, Internet of Things, Python, C,
-            C++,, Raspberry Pi, Arduino, Beagle Bone Black and front end web
-            development. Graduated with Bachelor of Engineering degree focused
-            in Electronics and Communication Engineering from MIT, Anna
-            University
-          </p>
+    <section class="header">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Reach Out</a></li>
+        </ul>
+      </nav>
+      <div class="introduction">
+        <div class="intro-text">
+          <h1>TITLE TEXT</h1>
+          <p>DESCRIPTION</p>
         </div>
       </div>
     </section>
-    <div class="download">
-      <a
-        href="https://drive.google.com/file/d/12XF1XNfXPrBEMd1HpbB1QULQnA8CMxUa/view?usp=sharing"
-      >
-        <div class="download-wrapper">
-          <p class="title in">Download Resume</p>
-          <a
-            href="https://drive.google.com/file/d/12XF1XNfXPrBEMd1HpbB1QULQnA8CMxUa/view?usp=sharing"
-          >
-            <img
-              id="resume"
-              class="download-icon"
-              src="./assets/download.png"
-              alt=""
-            />
-          </a>
+    <main>
+      <section class="about-me">
+        <div class="my-pic">
+          <div class="image-wrapper">
+            <img src="./assets/dp.png" alt="" />
+          </div>
         </div>
-      </a>
-      <section id="contact">
-        <div class="contact">
-          <p class="title">Reach out to me on</p>
-          <a href="https://www.linkedin.com/in/sai-arunesh-v-s-b1063b166/">
-            <img
-              class="icon"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv1TRjzY8iaO307JPz_hy2EW8BB7xqzbR83w&usqp=CAU"
-              alt="https://www.linkedin.com/in/sai-arunesh-v-s-b1063b166/"
-            />
-          </a>
-          <a href="https://wa.me/919500161982">
-            <img
-              class="icon"
-              src="https://www.freepnglogos.com/uploads/whatsapp-circle-message-messaging-messenger-round-icon--24.png"
-              alt=""
-            />
-          </a>
+        <div class="about-me-details">
+          <h1 class="title">About Me</h1>
+          <p class="info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
         </div>
       </section>
-    </div>
+    </main>
   </body>
 </html>

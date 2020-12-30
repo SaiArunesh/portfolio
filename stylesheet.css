@@ -1,195 +1,132 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Sacramento&display=swap");
-
-body {
-  background-color: white;
-  color: black;
-  font-size: 14px;
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-a {
-  color: white;
-  font-size: 1.25em;
-  padding-left: 10px;
-  text-decoration: none;
-  letter-spacing: 3px;
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-width: 400px;
-  flex-wrap: wrap;
-
-  background-image: url("./assets/bg.png");
-  background-color: #008090;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  margin: 5px;
+  background-color: teal;
+  height: 30vh;
+  margin: 0 5px;
+  color: white;
 }
 
-.header-ul {
+nav {
+  flex: 1 1 auto;
+}
+
+.nav-links {
   display: flex;
-  list-style-type: none;
-  margin: 5px 0;
-  padding: 0;
-}
-.header-ul li {
+  list-style: none;
+  width: 30%;
+  margin: 0 auto;
   padding: 10px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.header-ul li a:hover {
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
   text-decoration: underline;
   text-decoration-color: white;
   text-underline-offset: 10px;
 }
 
-.gif {
-  width: 300px;
-  height: 300px;
+.introduction {
+  flex: 2 1 auto;
+}
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
-.name {
-  font-family: "Sacramento", cursive;
-  color: white;
-  font-size: 6em;
-  margin: 0;
+.intro-text h1 {
+  flex: 1 1 auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.introduction p {
+  flex: 1 1 auto;
+  font-size: 20px;
+}
+main {
+  margin: 0 5px;
+  min-height: 69vh;
 }
 
-.descr {
-  color: white;
-  font-size: 2em;
+.about-me {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+}
+.my-pic {
+  margin-left: 10px;
 }
 
-.about {
-  margin: 30px 5px;
-  border-top: 10px;
-  overflow-x: auto;
-}
-
-.dp {
-  float: left;
-  width: 300px;
-  height: 300px;
+.image-wrapper {
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border-radius: 50%;
   object-fit: contain;
 }
 
-.dp-img {
+.image-wrapper img {
   width: auto;
   height: 100%;
   margin-left: -20px;
 }
 
-.desc {
-  float: left;
-  width: 80%;
-  margin-left: 2%;
-  overflow: hidden;
+.about-me-details {
+  margin-left: 20px;
+}
+.about-me-details h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+.about-me-details p {
+  color: #838383;
 }
 
-.title {
-  color: black;
-  font-size: 3em;
-  margin: 0 10px;
-  padding-bottom: 20px;
-}
-
-.desc .about-me {
-  color: #5f5f5f;
-  margin: 0 10px;
-  font-size: 1.5em;
-}
-.download {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.download-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: whitesmoke;
-  margin: 2px;
-}
-
-.download-wrapper:hover {
-  background-color: white;
-}
-
-.in {
-  line-height: 100px;
-  font-size: 2em;
-}
-
-.download-icon {
-  width: 100px;
-  height: 100px;
-}
-
-.contact .title {
-  font-size: 2em;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.icon {
-  width: auto;
-  height: 50px;
-}
-
-@media (max-width: 1676px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .dp {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .desc {
-    float: none;
-    width: 100%;
-  }
-}
-
-@media (max-width: 1055px) {
-  .desc {
-    float: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+@media screen and (max-width: 905px) {
+  nav {
+    display: none;
   }
 
   .header {
-    background-image: none;
+    height: 20vh;
   }
-  .header-ul {
-    display: none;
+
+  main {
+    height: 79vh;
   }
-  .gif {
-    display: none;
+
+  .intro-text h1,
+  p {
+    margin-top: 5px;
+    flex: 1 1 auto;
   }
-  .descr {
-    font-size: 1.25em;
+}
+@media screen and (max-width: 545px) {
+  .about-me {
+    flex-direction: column;
   }
-  .title {
-    font-size: 2em;
-  }
-  .icon {
-    width: auto;
-    height: 40px;
+  .my-pic {
+    margin: 10px;
   }
 }
