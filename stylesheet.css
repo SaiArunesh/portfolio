@@ -37,11 +37,11 @@ a {
 .header-ul {
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
 }
 .header-ul li {
-  margin-top: 30px;
+  padding: 10px;
 }
 
 .header-ul li a:hover {
