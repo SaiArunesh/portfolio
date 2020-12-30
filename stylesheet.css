@@ -160,16 +160,15 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #008090;
-  margin: 5px;
+  background-color: whitesmoke;
+  margin: 2px;
 }
 
 .download-wrapper:hover {
-  background-color: lightblue;
+  background-color: white;
 }
 
 .in {
-  color: white;
   line-height: 100px;
   font-size: 2em;
 }
