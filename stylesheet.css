@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
-  min-width: 300px;
+  min-width: 458px;
 }
 
 a {
@@ -113,6 +113,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3%;
 }
 
 .download-wrapper {
@@ -135,6 +136,9 @@ a {
 .download-icon {
   width: 100px;
   height: 100px;
+}
+.contact {
+  margin-top: 5%;
 }
 
 .contact .title {
