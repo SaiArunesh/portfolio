@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0 5px;
 }
 
 button {
@@ -19,7 +20,6 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   height: 35vh;
-  margin: 0 5px;
   color: white;
 }
 
@@ -68,16 +68,16 @@ nav {
   font-size: 20px;
 }
 main {
-  margin: 0 5px;
   min-height: 64vh;
 }
 
 .about-me {
-  min-height: 30vh;
+  width: 60%;
+  margin: 0 auto;
   display: flex;
 }
 .my-pic {
-  margin-left: 10px;
+  margin: 0px 10px 0 10px;
   align-self: center;
 }
 
@@ -110,10 +110,20 @@ main {
   letter-spacing: 2px;
   color: #838383;
 }
+@media screen and (max-width: 1030px) {
+  .about-me {
+    width: 90%;
+    margin: 0 5px;
+  }
+}
 
 @media screen and (max-width: 905px) {
   nav {
     display: none;
+  }
+  .about-me {
+    width: 90%;
+    margin: 0 5px;
   }
 
   .header {
@@ -132,9 +142,12 @@ main {
     flex: 1 1 auto;
   }
 }
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 694px) {
   .about-me {
     flex-direction: column;
+  }
+  .about-me-details {
+    align-items: center;
   }
   .my-pic {
     margin: 10px;
@@ -144,11 +157,6 @@ main {
   }
   .about-me-details p {
     font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .about-me-details {
-    align-items: center;
+    text-align: justify;
   }
 }
