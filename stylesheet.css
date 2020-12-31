@@ -15,7 +15,9 @@ button {
 .header {
   display: flex;
   flex-direction: column;
-  background-color: teal;
+  background: url("./assets/clouds.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 30vh;
   margin: 0 5px;
   color: white;
@@ -73,10 +75,10 @@ main {
 .about-me {
   min-height: 30vh;
   display: flex;
-  align-items: center;
 }
 .my-pic {
   margin-left: 10px;
+  align-self: center;
 }
 
 .image-wrapper {
@@ -95,11 +97,17 @@ main {
 
 .about-me-details {
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .about-me-details h1 {
+  margin-top: 50px;
   font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
 }
 .about-me-details p {
+  font-size: 20px;
+  letter-spacing: 2px;
   color: #838383;
 }
 
@@ -110,6 +118,8 @@ main {
 
   .header {
     height: 20vh;
+    background: none;
+    background-color: rgb(64, 176, 189);
   }
 
   main {
@@ -128,5 +138,11 @@ main {
   }
   .my-pic {
     margin: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-me-details {
+    align-items: center;
   }
 }
