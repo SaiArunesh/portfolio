@@ -160,3 +160,9 @@ main {
     text-align: justify;
   }
 }
+
+@media screen and (max-width: 474px) {
+  .about-me-details p {
+    text-align: start;
+  }
+}
