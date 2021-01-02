@@ -93,6 +93,7 @@ main {
   width: auto;
   height: 100%;
   margin-left: -20px;
+  animation: fade-in-img ease-in 0.75s;
 }
 
 .about-me-details {
@@ -306,21 +307,18 @@ main {
   font-size: 17px;
 }
 
-#snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.25s;
-  animation: fadein 0.5s, fadeout 0.5s 2.25s;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    bottom: 0;
+@keyframes fade-in-img {
+  0% {
     opacity: 0;
   }
-  to {
-    bottom: 30px;
+  100% {
     opacity: 1;
   }
+}
+
+#snackbar.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.25s;
 }
 
 @keyframes fadein {
@@ -331,17 +329,6 @@ main {
   to {
     bottom: 30px;
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
   }
 }
 
