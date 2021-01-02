@@ -208,7 +208,7 @@ main {
   }
 }
 
-@media screen and (max-width: 356px) {
+@media screen and (max-width: 364px) {
   .introduction {
     height: fit-content;
   }
