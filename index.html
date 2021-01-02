@@ -76,6 +76,49 @@ ________________________________________________________________________________
           </a>
         </div>
       </secion>
+
+      <section id="contact">
+        <div class="contact-wrapper">
+          <p>Reach out to me on</p>
+          <div class="icon-wrapper">
+            <a
+              href="https://www.linkedin.com/in/sai-arunesh-v-s-b1063b166/"
+              target="_blank"
+            >
+              <img
+                class="icon"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv1TRjzY8iaO307JPz_hy2EW8BB7xqzbR83w&usqp=CAU"
+                alt="https://www.linkedin.com/in/sai-arunesh-v-s-b1063b166/"
+              />
+            </a>
+            <a href="https://twitter.com/sai_arunesh" target="_blank">
+              <img
+                src="https://img.icons8.com/cotton/2x/twitter.png"
+                alt="https://twitter.com/sai_arunesh"
+                class="icon"
+            /></a>
+            <img
+              src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png"
+              alt="vssaiarunesh@gmail.com"
+              class="icon"
+              style="cursor: pointer"
+              onclick="copyToClipboard('vssaiarunesh@gmail.com')"
+            />
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script>
+      const copyToClipboard = (str) => {
+        const el = document.createElement("textarea");
+        el.value = str;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand("copy");
+        document.body.removeChild(el);
+        alert("Email ID copied to clipboard");
+      };
+    </script>
   </body>
 </html>
