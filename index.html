@@ -108,6 +108,7 @@ ________________________________________________________________________________
         </div>
       </section>
     </main>
+    <div id="snackbar"><h5>Copied Email ID to Clipboard</h5></div>
 
     <script>
       const copyToClipboard = (str) => {
@@ -117,7 +118,11 @@ ________________________________________________________________________________
         el.select();
         document.execCommand("copy");
         document.body.removeChild(el);
-        alert("Email ID copied to clipboard");
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 2750);
       };
     </script>
   </body>
