@@ -134,7 +134,7 @@ main {
   margin: 50px auto;
   opacity: 1;
   animation: fade-in-img ease-in 0.75s;
-  height: 15vh;
+  height: 200px;
 }
 
 .resume-wrapper:hover {
