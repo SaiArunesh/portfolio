@@ -3,6 +3,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -16,10 +19,10 @@ button {
 .header {
   display: flex;
   flex-direction: column;
-  background: url("./assets/clouds.png");
+  background: url("./assets/Wide-Minimalistic-Landscape-3840x1080-wallpaper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 35vh;
+  height: 50vh;
   color: white;
 }
 
@@ -62,18 +65,21 @@ nav {
   font-size: 50px;
   font-weight: 500;
   letter-spacing: 5px;
+  text-shadow: 2px 2px 10px black;
 }
 .introduction p {
   flex: 1 1 auto;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  text-shadow: 2px 2px 10px black;
 }
 main {
-  min-height: 64vh;
+  min-height: 49vh;
 }
 
 .about-me {
-  width: 60%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 50px auto;
   display: flex;
 }
 .my-pic {
@@ -102,8 +108,8 @@ main {
   flex-direction: column;
 }
 .about-me-details h1 {
-  margin-top: 50px;
   font-family: "Ubuntu", sans-serif;
+  justify-content: center;
   font-size: 40px;
 }
 .about-me-details p {
@@ -118,20 +124,22 @@ main {
   flex-direction: column;
   align-items: center;
   width: 30%;
-  margin: 20px auto;
-  opacity: 0.8;
-}
-
-.resume-wrapper:hover {
+  margin: 50px auto;
   opacity: 1;
 }
 
-.resume-wrapper h1 {
-  font-size: 30px;
+.resume-wrapper:hover {
+  opacity: 0.8;
+}
 
-  background-color: lightblue;
+.resume-wrapper h1 {
+  font-size: 25px;
+  letter-spacing: 3px;
+
+  background-color: #01579b;
   width: 100%;
   height: 50px;
+  color: white;
 
   text-align: center;
   line-height: 50px;
@@ -143,7 +151,7 @@ main {
 }
 
 #contact {
-  margin: 20px;
+  margin: 50px aut;
 }
 
 .contact-wrapper {
@@ -203,8 +211,8 @@ main {
 
 @media screen and (max-width: 1030px) {
   .about-me {
-    width: 90%;
-    margin: 0 5px;
+    width: 95%;
+    margin: 0px auto;
   }
 
   .resume-wrapper h1 {
@@ -220,15 +228,17 @@ main {
     width: 50%;
   }
   .about-me {
-    width: 90%;
-    margin: 0 5px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .header {
-    height: 20vh;
-
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    /* 
     background: none;
-    background-color: rgb(64, 176, 189);
+    background-color: rgb(64, 176, 189); */
   }
 
   main {
@@ -281,6 +291,9 @@ main {
 }
 
 @media screen and (max-width: 364px) {
+  .intro-text {
+    margin-top: 20px;
+  }
   .intro-text h1 {
     font-size: 35px;
     height: fit-content;
