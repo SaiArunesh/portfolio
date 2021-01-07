@@ -97,17 +97,30 @@ nav {
   left: 0;
   height: 100%;
   width: 0%;
-  background-color: orange;
   animation: text-reveal-box 1s ease;
   animation-delay: 1s;
 }
-
-.introduction p {
+.introduction div {
   flex: 1 1 auto;
+}
+
+.introduction div p {
   font-size: 25px;
   font-weight: 400;
-  text-shadow: 2px 2px 10px black;
-  animation: fade-in-img ease-in 0.75s;
+  position: relative;
+  color: transparent;
+  animation: text-reveal 0.5s ease forwards;
+  animation-delay: 1.5s;
+}
+.intro-text p span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: orange;
+  animation: text-reveal-box 1s ease;
+  animation-delay: 1s;
 }
 main {
   min-height: 49vh;
