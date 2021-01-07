@@ -110,7 +110,7 @@ nav {
   position: relative;
   color: transparent;
   animation: text-reveal 0.5s ease forwards;
-  animation-delay: 1.5s;
+  animation-delay: 2.5s;
 }
 .intro-text p span {
   position: absolute;
@@ -120,7 +120,7 @@ nav {
   width: 0%;
   background-color: orange;
   animation: text-reveal-box 1s ease;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 main {
   min-height: 49vh;
