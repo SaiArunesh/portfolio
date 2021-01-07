@@ -25,6 +25,20 @@ button {
   background-position: top center;
   height: 50vh;
   color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 nav {
