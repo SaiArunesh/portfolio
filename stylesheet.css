@@ -88,7 +88,7 @@ nav {
   letter-spacing: 5px;
   position: relative;
   color: transparent;
-  animation: text-reveal 1s ease forwards;
+  animation: text-reveal 0.5s ease forwards;
   animation-delay: 1.5s;
 }
 .intro-text h1 span {
