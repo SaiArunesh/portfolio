@@ -361,7 +361,7 @@ main {
   }
 }
 
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 1020px) {
   nav {
     display: none;
   }
