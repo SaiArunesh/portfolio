@@ -201,8 +201,52 @@ main {
   width: 100px;
 }
 
+/* Projects start */
+
+#projects .projects {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  flex-direction: row;
+}
+
+#projects .project-item {
+  flex-basis: 80%;
+  max-width: 612px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url("./assets/project-item-bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 10px 5%;
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#projects .project-item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/*End Project section*/
+
 #contact {
-  margin: 50px aut;
+  margin: 50px auto;
 }
 
 .contact-wrapper {
