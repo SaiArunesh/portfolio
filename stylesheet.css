@@ -221,17 +221,25 @@ main {
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
-  background-image: url("./assets/project-item-bg3.jpg");
+  /* background-image: url("./assets/project-item-bg3.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center; 
+    z-index: 1;
+*/
+  background-color: #fafafa;
+  border: 1px solid #01579b;
   margin: 10px 5%;
-  color: white;
+  color: black;
   position: relative;
-  z-index: 1;
   overflow: hidden;
 }
 
-#projects .project-item::after {
+#projects .project-item:hover {
+  background-color: #01579b;
+  color: white;
+}
+
+/* #projects .project-item::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -241,6 +249,17 @@ main {
   background-color: black;
   opacity: 0.5;
   z-index: -1;
+} */
+
+#projects h2 {
+  font-size: 20px;
+  opacity: 1;
+}
+
+#projects p {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1.5px;
 }
 
 /*End Project section*/
