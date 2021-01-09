@@ -261,6 +261,8 @@ main {
 }
 
 #projects .project-item:hover {
+  transition: background-color 0.5s, color 0.5s;
+  transition-timing-function: ease;
   background-color: #01579b;
   color: white;
 }
