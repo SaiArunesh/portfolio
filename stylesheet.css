@@ -27,6 +27,7 @@ button {
   color: white;
   z-index: 1;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .header::after {
@@ -165,41 +166,37 @@ main {
   letter-spacing: 2px;
   color: #838383;
 }
-
-.resume-wrapper {
-  border: 1px solid black;
+/*Resume section*/
+#resume .resume-wrapper {
+  min-height: 10vh;
+  flex-basis: 60%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 30%;
+  align-items: center;
+  border: 1px solid #01579b;
   margin: 50px auto;
-  opacity: 1;
-  height: 200px;
 }
-
-.resume-wrapper:hover {
-  opacity: 0.8;
-}
-.resume-wrapper .card-header {
-  background-color: #01579b;
-  height: 100%;
+#resume .resume-title {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
-.resume-wrapper .card-header h1 {
+#resume h1 {
   font-size: 25px;
   letter-spacing: 3px;
   background-color: #01579b;
   color: white;
+  text-align: center;
+  padding: 20px 0px;
 }
-.resume-wrapper img {
+#resume img {
   margin: 10px;
   height: 100px;
   width: 100px;
 }
+/*End resume section*/
 
 /* Projects start */
 
@@ -351,22 +348,11 @@ main {
     width: 95%;
     margin: 50px auto;
   }
-
-  .resume-wrapper {
-    width: 50%;
-  }
-
-  .resume-wrapper h1 {
-    font-size: 20px;
-  }
 }
 
 @media screen and (max-width: 1020px) {
   nav {
     display: none;
-  }
-  .resume-wrapper {
-    width: 60%;
   }
   .about-me {
     width: 100%;
@@ -416,18 +402,9 @@ main {
   }
 }
 
-@media screen and (max-width: 658px) {
-  .resume-wrapper {
-    width: 65%;
-  }
-}
-
 @media screen and (max-width: 474px) {
   .about-me-details p {
     text-align: start;
-  }
-  .resume-wrapper {
-    width: 90%;
   }
 }
 
