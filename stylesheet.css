@@ -369,7 +369,7 @@ main {
   }
 
   .header {
-    height: 30vh;
+    height: 40vh;
     background-size: cover;
     background-position: center;
     /* 
@@ -379,17 +379,6 @@ main {
 
   main {
     height: 74vh;
-  }
-
-  .introduction {
-    flex: 1 1 auto;
-    height: fit-content;
-  }
-
-  .intro-text div h1,
-  .intro-text div p {
-    margin-top: 5px;
-    flex: 1 1 auto;
   }
 }
 @media screen and (max-width: 694px) {
@@ -424,12 +413,15 @@ main {
   .intro-text {
     margin-top: 20px;
   }
+  .header {
+    height: 30vh;
+  }
   .intro-text div h1 {
     font-size: 30px;
     height: fit-content;
   }
   .intro-text p {
-    font-size: 18px;
+    font-size: 16px;
     height: fit-content;
   }
 }
