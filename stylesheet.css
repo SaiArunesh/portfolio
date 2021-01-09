@@ -15,6 +15,9 @@ body {
 button {
   font-family: "Poppins", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 
 .header {
   display: flex;
