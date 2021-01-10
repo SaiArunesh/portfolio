@@ -127,9 +127,6 @@ nav {
   animation: text-reveal-box 1s ease;
   animation-delay: 2s;
 }
-main {
-  min-height: 49vh;
-}
 
 .about-me {
   width: 80%;
@@ -298,6 +295,7 @@ main {
 
 /*End Project section*/
 
+/* Contact section */
 #contact {
   margin: 50px auto;
 }
@@ -319,43 +317,53 @@ main {
   height: 50px;
 }
 
-.tooltip {
+.contact-form-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-basis: 80%;
+  max-width: 800px;
+  min-height: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  border: 1px solid #01579b;
+  margin: 10px auto;
+  color: black;
   position: relative;
+  overflow: hidden;
+}
+
+.contact-form-wrapper h1 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.contact-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  flex-wrap: wrap;
+}
+.contact-form-wrapper .row {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
+/*Contact section ends*/
 
 @media screen and (max-width: 1030px) {
   .about-me {
