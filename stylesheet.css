@@ -300,6 +300,12 @@ nav {
   margin: 50px auto;
 }
 
+.contact-header h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
 .contact-wrapper {
   display: flex;
   align-items: center;
@@ -361,6 +367,12 @@ nav {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.also-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*Contact section ends*/
