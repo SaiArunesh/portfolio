@@ -374,14 +374,14 @@ nav {
   background-color: #01579b;
   border: 2px solid #01579b;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px;
   margin: 20px 0px;
   color: white;
 }
 .contact-form-wrapper button:hover {
   transition: 0.5s font-size;
-  font-size: 25px;
+  font-size: 17px;
 }
 
 .also-wrap {
