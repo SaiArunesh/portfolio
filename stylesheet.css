@@ -5,8 +5,9 @@
 }
 html {
   scroll-behavior: smooth;
-  max-width: 1600px;
   margin: 0px auto 5px auto;
+  max-width: 90%;
+
   box-shadow: 0px 0px 10px;
 }
 
@@ -394,14 +395,6 @@ nav {
 }
 
 /*Contact section ends*/
-
-@media screen and (max-width: 1539px) {
-  html {
-    margin: none;
-    box-shadow: none;
-  }
-}
-
 @media screen and (max-width: 1030px) {
   .about-me {
     width: 95%;
@@ -423,10 +416,6 @@ nav {
     background: none;
     background-color: rgb(64, 176, 189); */
   }
-
-  main {
-    height: 74vh;
-  }
 }
 @media screen and (max-width: 694px) {
   .about-me {
@@ -444,6 +433,10 @@ nav {
   .about-me-details p {
     font-size: 18px;
     text-align: justify;
+  }
+  html {
+    margin: none;
+    box-shadow: none;
   }
 }
 
