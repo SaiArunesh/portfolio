@@ -170,10 +170,15 @@ nav {
 	letter-spacing: 2px;
 	color: #838383;
 }
+#resume {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 /*Resume section*/
 #resume .resume-wrapper {
 	min-height: 10vh;
-	flex-basis: 60%;
+	flex-basis: 90%;
 	max-width: 500px;
 	display: flex;
 	flex-direction: column;
@@ -181,7 +186,6 @@ nav {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #01579b;
-	margin: 50px auto;
 }
 
 #resume .resume-title {
@@ -238,7 +242,7 @@ nav {
 
 #projects .project-item {
 	flex-basis: 80%;
-	max-width: 612px;
+	max-width: 576px;
 	min-height: 380px;
 
 	display: flex;
