@@ -20,6 +20,7 @@ button {
 }
 a {
 	text-decoration: none;
+	margin:0 0 20px 0;
 }
 
 .header {
@@ -269,6 +270,12 @@ nav {
 	transition-timing-function: ease;
 	background-color: #01579b;
 	color: white;
+}
+
+#projects .project-item:hover a{
+	transition: color 0.5s;
+	color: yellow;
+	text-decoration: underline yellow;
 }
 
 #projects p {

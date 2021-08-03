@@ -17,221 +17,201 @@ ________________________________________________________________________________
  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./stylesheet.css" />
-    <link rel="icon" href="./assets/SA_Logo.png" />
-    <title>Sai's Portfolio</title>
-  </head>
-  <body>
-    <section class="header">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#resume" class="nav-link">Resume</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
 
-          <li><a href="#contact" class="nav-link">Reach Out</a></li>
-        </ul>
-      </nav>
-      <div class="introduction">
-        <div class="intro-text">
-          <div>
-            <h1>Sai Arunesh <span></span></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./stylesheet.css" />
+  <link rel="icon" href="./assets/SA_Logo.png" />
+  <title>Sai's Portfolio</title>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+
+        <li><a href="#contact" class="nav-link">Reach Out</a></li>
+      </ul>
+    </nav>
+    <div class="introduction">
+      <div class="intro-text">
+        <div>
+          <h1>Sai Arunesh <span></span></h1>
+        </div>
+        <div>
+          <p>I am a <b>UI Developer</b> <span></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section class="about-me">
+      <div class="my-pic">
+        <div class="image-wrapper">
+          <img src="./assets/dp.png" alt="" />
+        </div>
+      </div>
+      <div class="about-me-details">
+        <h1>About Me</h1>
+        <p>
+          Hi, I am Sai Arunesh, 22 years old working currently working as a UI
+          Developer with Caterpillar Inc. , Chennai, India. I am skilled in
+          Embedded Programming, Internet of Things, Python, C, C++, Raspberry
+          Pi, Arduino, Beagle Bone Black and front end web development in
+          AngularJS. Graduated with Bachelor of Engineering degree focused in
+          Electronics and Communication Engineering from MIT, Anna University
+        </p>
+      </div>
+    </section>
+    <a href="https://drive.google.com/file/d/12XF1XNfXPrBEMd1HpbB1QULQnA8CMxUa/view?usp=sharing" target="_blank"
+      title="Click to open Resume" style="text-decoration: none">
+      <secion id="resume">
+        <div class="resume-wrapper">
+          <div class="resume-title">
+            <h1>Download Resume</h1>
           </div>
-          <div>
-            <p>I am a <b>UI Developer</b> <span></span></p>
+          <img src="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/256/Downloads-icon.png"
+            alt="Download-icon" />
+        </div>
+      </secion>
+    </a>
+
+    <section id="projects">
+      <div class="projects">
+        <div class="project-header">
+          <h1>projects</h1>
+        </div>
+        <div class="project-item-wrapper">
+          <div class="project-item">
+            <h2>Lora guiding system for Fishermen</h2>
+            <p><i> Nov 2019 – Apr 2020</i></p>
+            <p>
+              This was done using STM32 Nucleo L073RZ board &
+              <strong>SX1272MB2XAS LoRa Shield (node to node)</strong>
+              utilising GPS positioning system , SOS alert,Duplex
+              Communication, Border Crossing warning along with Cloud backed
+              live location plot monitoring and Data Logging using Adafruit.io
+            </p>
+          </div>
+          <div class="project-item">
+            <h2>RFID based attendance system using Telegram</h2>
+            <p><i> Jul 2019 – Oct 2019 </i></p>
+            <p>
+              An Attendance system controlled by
+              <strong> Raspberry Pi</strong> . The unique feature being that
+              automated messages are sent regarding details of late entrants &
+              absenteeism via Telegram API to respective parents/guardians.
+            </p>
+          </div>
+          <div class="project-item">
+            <h2>IOT based Home Automation system</h2>
+            <p><i> Dec 2018 – Mar 2019 </i></p>
+
+            <p>
+              Made Mobile phone Controlled High voltage appliances using Blynk
+              App ,Motion Detection and warning system using Raspberry Pi and
+              automatic Door unlock utilising speech to text engine (through
+              Google API)
+            </p>
+          </div>
+          <div class="project-item">
+            <h2>FIRST ™ Tech Challenge Bot</h2>
+            <p><i> May 2018 </i></p>
+            <p>
+              A Robot for FTC competiton was made with manual and autonomous
+              movement and gripping mechanism and an array of sensors were
+              used along with the ability to climb on steeper surfaces using
+              <strong> BeagleBone Black Dev Board</strong>
+            </p>
+          </div>
+          <div class="project-item">
+            <h2>neog level 0 projects</h2>
+            <p><i> Aug 2021</i></p>
+            <a href="./neogProjects.html">
+              <p>Click to view</p>
+            </a>
+
           </div>
         </div>
       </div>
     </section>
-    <main>
-      <section class="about-me">
-        <div class="my-pic">
-          <div class="image-wrapper">
-            <img src="./assets/dp.png" alt="" />
-          </div>
-        </div>
-        <div class="about-me-details">
-          <h1>About Me</h1>
-          <p>
-            Hi, I am Sai Arunesh, 22 years old working currently working as a UI
-            Developer with Caterpillar Inc. , Chennai, India. I am skilled in
-            Embedded Programming, Internet of Things, Python, C, C++, Raspberry
-            Pi, Arduino, Beagle Bone Black and front end web development in
-            AngularJS. Graduated with Bachelor of Engineering degree focused in
-            Electronics and Communication Engineering from MIT, Anna University
-          </p>
-        </div>
-      </section>
-      <a
-        href="https://drive.google.com/file/d/12XF1XNfXPrBEMd1HpbB1QULQnA8CMxUa/view?usp=sharing"
-        target="_blank"
-        title="Click to open Resume"
-        style="text-decoration: none"
-      >
-        <secion id="resume">
-          <div class="resume-wrapper">
-            <div class="resume-title">
-              <h1>Download Resume</h1>
-            </div>
-            <img
-              src="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/256/Downloads-icon.png"
-              alt="Download-icon"
-            />
-          </div>
-        </secion>
-      </a>
 
-      <section id="projects">
-        <div class="projects">
-          <div class="project-header">
-            <h1>projects</h1>
-          </div>
-          <div class="project-item-wrapper">
-            <div class="project-item">
-              <h2>Lora guiding system for Fishermen</h2>
-              <p><i> Nov 2019 – Apr 2020</i></p>
-              <p>
-                This was done using STM32 Nucleo L073RZ board &
-                <strong>SX1272MB2XAS LoRa Shield (node to node)</strong>
-                utilising GPS positioning system , SOS alert,Duplex
-                Communication, Border Crossing warning along with Cloud backed
-                live location plot monitoring and Data Logging using Adafruit.io
-              </p>
-            </div>
-            <div class="project-item">
-              <h2>RFID based attendance system using Telegram</h2>
-              <p><i> Jul 2019 – Oct 2019 </i></p>
-              <p>
-                An Attendance system controlled by
-                <strong> Raspberry Pi</strong> . The unique feature being that
-                automated messages are sent regarding details of late entrants &
-                absenteeism via Telegram API to respective parents/guardians.
-              </p>
-            </div>
-            <div class="project-item">
-              <h2>IOT based Home Automation system</h2>
-              <p><i> Dec 2018 – Mar 2019 </i></p>
-
-              <p>
-                Made Mobile phone Controlled High voltage appliances using Blynk
-                App ,Motion Detection and warning system using Raspberry Pi and
-                automatic Door unlock utilising speech to text engine (through
-                Google API)
-              </p>
-            </div>
-            <div class="project-item">
-              <h2>FIRST ™ Tech Challenge Bot</h2>
-              <p><i> May 2018 </i></p>
-
-              <p>
-                A Robot for FTC competiton was made with manual and autonomous
-                movement and gripping mechanism and an array of sensors were
-                used along with the ability to climb on steeper surfaces using
-                <strong> BeagleBone Black Dev Board</strong>
-              </p>
-            </div>
-          </div>
+    <section id="contact">
+      <div class="contact-wrapper">
+        <div class="contact-header">
+          <h1>Send a Message to me !</h1>
         </div>
-      </section>
-
-      <section id="contact">
-        <div class="contact-wrapper">
-          <div class="contact-header">
-            <h1>Send a Message to me !</h1>
-          </div>
-          <div class="contact-form-wrapper">
-            <form action="https://formspree.io/f/mjvpjado" method="POST">
-              <div class="row">
-                <label for="name"><h1>Name</h1></label>
-                <input id="name" for="name" type="text" name="name" required />
-              </div>
-              <div class="row">
-                <label for="email"><h1>Mail id</h1></label>
-                <input
-                  id="email"
-                  for="email"
-                  type="email"
-                  name="reply to"
-                  required
-                />
-              </div>
-              <div class="row">
-                <label for="message"><h1>Message</h1></label>
-                <textarea
-                  name="message"
-                  id=""
-                  cols="500"
-                  rows="15"
-                  style="resize: none"
-                  required
-                ></textarea>
-              </div>
-              <div class="row">
-                <button type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
+        <div class="contact-form-wrapper">
+          <form action="https://formspree.io/f/mjvpjado" method="POST">
+            <div class="row">
+              <label for="name">
+                <h1>Name</h1>
+              </label>
+              <input id="name" for="name" type="text" name="name" required />
+            </div>
+            <div class="row">
+              <label for="email">
+                <h1>Mail id</h1>
+              </label>
+              <input id="email" for="email" type="email" name="reply to" required />
+            </div>
+            <div class="row">
+              <label for="message">
+                <h1>Message</h1>
+              </label>
+              <textarea name="message" id="" cols="500" rows="15" style="resize: none" required></textarea>
+            </div>
+            <div class="row">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
         </div>
-        <div class="also-wrap">
-          <p>Also Reach out to me on</p>
-          <div class="icon-wrapper">
-            <a href="https://www.linkedin.com/in/sai-arunesh/" target="_blank">
-              <img
-                class="icon"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv1TRjzY8iaO307JPz_hy2EW8BB7xqzbR83w&usqp=CAU"
-                alt="https://www.linkedin.com/in/sai-arunesh"
-              />
-            </a>
-            <a href="https://twitter.com/sai_arunesh" target="_blank">
-              <img
-                src="https://img.icons8.com/cotton/2x/twitter.png"
-                alt="https://twitter.com/sai_arunesh"
-                class="icon"
-            /></a>
-            <a
-              href="https://github.com/SaiArunesh?tab=repositories"
-              target="_blank"
-            >
-              <img
-                src="https://img.icons8.com/clouds/2x/github.png"
-                alt="https://github.com/SaiArunesh"
-                class="icon"
-            /></a>
-            <img
-              src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png"
-              alt="vssaiarunesh@gmail.com"
-              class="icon"
-              style="cursor: pointer"
-              onclick="copyToClipboard('vssaiarunesh@gmail.com')"
-            />
-          </div>
+      </div>
+      <div class="also-wrap">
+        <p>Also Reach out to me on</p>
+        <div class="icon-wrapper">
+          <a href="https://www.linkedin.com/in/sai-arunesh/" target="_blank">
+            <img class="icon"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv1TRjzY8iaO307JPz_hy2EW8BB7xqzbR83w&usqp=CAU"
+              alt="https://www.linkedin.com/in/sai-arunesh" />
+          </a>
+          <a href="https://twitter.com/sai_arunesh" target="_blank">
+            <img src="https://img.icons8.com/cotton/2x/twitter.png" alt="https://twitter.com/sai_arunesh"
+              class="icon" /></a>
+          <a href="https://github.com/SaiArunesh?tab=repositories" target="_blank">
+            <img src="https://img.icons8.com/clouds/2x/github.png" alt="https://github.com/SaiArunesh"
+              class="icon" /></a>
+          <img src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png" alt="vssaiarunesh@gmail.com"
+            class="icon" style="cursor: pointer" onclick="copyToClipboard('vssaiarunesh@gmail.com')" />
         </div>
-      </section>
-    </main>
-    <div id="snackbar"><h5>Copied Email ID to Clipboard</h5></div>
+      </div>
+    </section>
+  </main>
+  <div id="snackbar">
+    <h5>Copied Email ID to Clipboard</h5>
+  </div>
 
-    <script>
-      const copyToClipboard = (str) => {
-        const el = document.createElement("textarea");
-        el.value = str;
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand("copy");
-        document.body.removeChild(el);
-        var x = document.getElementById("snackbar");
-        x.className = "show";
-        setTimeout(function () {
-          x.className = x.className.replace("show", "");
-        }, 2750);
-      };
-    </script>
-  </body>
+  <script>
+    const copyToClipboard = (str) => {
+      const el = document.createElement("textarea");
+      el.value = str;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function () {
+        x.className = x.className.replace("show", "");
+      }, 2750);
+    };
+  </script>
+</body>
+
 </html>
