@@ -462,12 +462,6 @@ nav {
 }
 
 @media screen and (max-width: 474px) {
-	.about-me-details p {
-		text-align: start;
-	}
-}
-
-@media screen and (max-width: 364px) {
 	.nav-links {
 		font-size: 10px;
 	}
@@ -494,8 +488,8 @@ nav {
 		width:95%;
 		margin:2px auto;
 	}
-	
 }
+
 
 #snackbar {
 	visibility: hidden;
